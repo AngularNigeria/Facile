@@ -5,14 +5,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "hmr": "ng serve --hmr -e=hmr --hot",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "postinstall": "rm - rf node_modules/@types/async",
   "private": true,
   "dependencies": {
+    "@angular/cli": "^1.2.6",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/core": "^4.0.0",
@@ -52,10 +53,10 @@
     "socket.io": "^2.0.3",
     "sprint-js": "^0.1.0",
     "webpack": "^3.4.1",
+    "whatwg-fetch": "^2.0.3",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular/cli": "1.0.0",
     "@angular/compiler-cli": "^4.0.0",
     "@angularclass/hmr": "^1.2.2",
     "@types/jasmine": "2.5.38",
