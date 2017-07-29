@@ -27,7 +27,7 @@ $ gulp serve
 
 ## Todos
 
-- [ ] Set up backend with Express and Webpack
+- [x] Set up backend with Express and Webpack 3
 - [ ] Set up apollo dependencies
 - [ ] Set up Graph Ql server on the express
 - [ ] Clean up on Passport Authentication
